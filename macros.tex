@@ -1,0 +1,112 @@
+% This file provides examples of some useful macros for typesetting
+% dissertations.  None of the macros defined here are necessary beyond
+% for the template documentation, so feel free to change, remove, and add
+% your own definitions.
+%
+% We recommend that you define macros to separate the semantics
+% of the things you write from how they are presented.  For example,
+% you'll see definitions below for a macro \file{}: by using
+% \file{} consistently in the text, we can change how filenames
+% are typeset simply by changing the definition of \file{} in
+% this file.
+% 
+%% The following is a directive for TeXShop to indicate the main file
+%%!TEX root = diss.tex
+
+\definecolor{darkGreen}{RGB}{0, 100, 0}
+\definecolor{nmGreen}{RGB}{225, 255, 194}
+\definecolor{nmOrange}{RGB}{254, 225, 194}
+\definecolor{nmYellow}{RGB}{255, 255, 208}
+\definecolor{indigo}{RGB}{75, 0, 130}
+
+\newcommand*\rot{\rotatebox{90}}
+\newcommand*\OK{\ding{52}}
+
+\newcommand*\rotsmall{\scriptsize \rotatebox{90}}
+\newcommand*\OKemu{\ding{51}}
+
+\newcommand*\match{\textcolor{darkGreen}{\ding{52}}}
+\newcommand*\mismatch{\textcolor{red}{\ding{54}}}
+\newcommand*\posmatch{\textcolor{blue}{{\bf ?}}}
+
+\newcommand{\bstart}[1]{\vspace{1mm} \noindent{\textbf{#1:}}}
+
+\newcommand{\bqstart}[1]{\vspace{1mm} \noindent{\textbf{#1}}}
+
+\newcommand{\bscstart}[1]{\vspace{1mm} \noindent{\sc{\textbf{#1:}}}}
+
+\newcommand{\NA}{\textsc{n/a}}	% for "not applicable"
+
+% author comments
+\definecolor{matt}{RGB}{27,158,119}
+\definecolor{tamara}{RGB}{117,112,179}
+\definecolor{joanna}{RGB}{217,95,2}
+\definecolor{ron}{RGB}{102,166,30}
+
+\newcommand{\mb}[1]{\textcolor{matt}{\textbf{MB: #1}}}
+\newcommand{\tm}[1]{\textcolor{tamara}{\textbf{TM: #1}}}
+\newcommand{\jm}[1]{\textcolor{joanna}{\textbf{JM: #1}}}
+\newcommand{\rr}[1]{\textcolor{ron}{\textbf{RR: #1}}}
+% \newcommand{\mb}[1]{}
+% \newcommand{\tm}[1]{}
+% \newcommand{\jm}[1]{}
+% \newcommand{\rr}[1]{}
+
+\newcommand{\etal}{et al.}
+\newcommand{\eg}{e.g., }
+\newcommand{\ie}{i.e., }
+\newcommand{\cf}{c.f. }
+
+% Some useful macros for typesetting terms.
+\newcommand{\file}[1]{\texttt{#1}}
+\newcommand{\class}[1]{\texttt{#1}}
+\newcommand{\latexpackage}[1]{\href{http://www.ctan.org/macros/latex/contrib/#1}{\texttt{#1}}}
+\newcommand{\latexmiscpackage}[1]{\href{http://www.ctan.org/macros/latex/contrib/misc/#1.sty}{\texttt{#1}}}
+\newcommand{\env}[1]{\texttt{#1}}
+\newcommand{\BibTeX}{Bib\TeX}
+
+\newcounter{papernumber} 
+\setcounter{papernumber}{0}
+\renewcommand{\thepapernumber}{~[R-\arabic{papernumber}]}
+
+\newcounter{rownumber}[figure] 
+\setcounter{rownumber}{1}
+\renewcommand{\therownumber}{A\arabic{rownumber}}
+
+\newcounter{prownumber}[figure] 
+\setcounter{prownumber}{1}
+\renewcommand{\theprownumber}{\Roman{prownumber}}
+
+% Define a command \doi{} to typeset a digital object identifier (DOI).
+% Note: if the following definition raise an error, then you likely
+% have an ancient version of url.sty.  Either find a more recent version
+% (3.1 or later work fine) and simply copy it into this directory,  or
+% comment out the following two lines and uncomment the third.
+\DeclareUrlCommand\DOI{}
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{\DOI{doi:#1}}}
+%\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+
+% Useful macro to reference an online document with a hyperlink
+% as well with the URL explicitly listed in a footnote
+% #1: the URL
+% #2: the anchoring text
+\newcommand{\webref}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+% epigraph is a nice environment for typesetting quotations
+\makeatletter
+\newenvironment{epigraph}{%
+	\begin{flushright}
+	\begin{minipage}{\columnwidth-0.75in}
+	\begin{flushright}
+	\@ifundefined{singlespacing}{}{\singlespacing}%
+    }{
+	\end{flushright}
+	\end{minipage}
+	\end{flushright}}
+\makeatother
+
+% \FIXME{} is a useful macro for noting things needing to be changed.
+% The following definition will also output a warning to the console
+\newcommand{\FIXME}[1]{\typeout{**FIXME** #1}\textbf{[FIXME: #1]}}
+
+% END
