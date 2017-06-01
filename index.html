@@ -1,0 +1,169 @@
+<html><head>
+
+
+
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Why Visualization? Task Abstraction for Analysis and Design by mattbrehmer</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="github-light.css">
+    <meta name="viewport" content="width=device-width">
+    
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+    <div class="wrapper">
+      <header>
+        <h1>Why Visualization? Task Abstraction for Analysis and Design</h1>
+        <p>PhD Dissertation by Matthew Brehmer, InfoVis Group, University of British Columbia</p>
+
+        <p class="view"><a href="https://github.com/mattbrehmer/dissertation">View the Project on GitHub <small>mattbrehmer/dissertation</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mattbrehmer/dissertation/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mattbrehmer/dissertation/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mattbrehmer/dissertation">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract</h3>
+
+<p><em>Why do people visualize data?</em></p>
+<p>People visualize data either to consume or produce information relevant to a domain-specific problem or interest.
+Visualization design and evaluation involves a mapping between domain problems or interests and appropriate visual encoding and interaction techniques. This mapping translates a domain-specific situation into <em>abstract visualization tasks</em>, which allows for succinct descriptions of tasks and task sequences in terms of <em>why</em> data is visualized, <em>what</em> dependencies a task might have in terms of <em>input</em> and <em>output</em>, and <em>how</em> the task is supported in terms of visual encoding and interaction <em>idioms</em>. Describing tasks in this way facilitates the comparison and cross-pollination of visualization idioms across application domains; the mapping also applies in reverse, whenever visualization researchers aim to contextualize novel visualization techniques.</p>
+
+<p>In this dissertation, we present multiple instances of visualization task abstraction, each integrating our proposed typology of abstract visualization tasks. We apply this typology as an analysis tool in an interview study of individuals who visualize dimensionally reduced data in different application domains, in a post-deployment field study evaluation of a visual analysis tool in the domain of investigative journalism, and in a visualization design study in the domain of energy management.</p>
+
+<p>In the interview study, we draw upon and demonstrate the descriptive power of our typology to classify five task sequences relating to visualizing dimensionally reduced data. This classification is intended to inform the design of new tools and techniques for visualizing this form of data.</p>
+
+<p>In the field study, we draw upon and demonstrate the descriptive and evaluative power of our typology to evaluate <em>Overview</em>, a visualization tool for investigating large text document collections. After analyzing its adoption by investigative journalists, we characterize two abstract tasks relating to document mining and present seven lessons relating to the design of visualization tools for document data.</p>
+
+<p>In the design study, we demonstrate the descriptive, evaluative, and generative power of our typology and identify matches and mismatches between visualization idioms and three abstract tasks relating to time series data.</p>
+
+<p>Finally, we reflect upon the impact of our task typology.</p>
+<p>(Also see this <a href="https://medium.com/@mattbrehmer/why-make-pictures-using-computers-831db023260c" target="_blank">Up-Goer Five version</a> of the abstract using the ten hundred most used English words.)</p>
+<h3>
+<a id="about-the-author" class="anchor" href="#about-the-author" aria-hidden="true"><span class="octicon octicon-link"></span></a>About the Author</h3>
+
+<p><a href="http://mattbrehmer.github.io">Matthew Brehmer</a> (<a href="https://github.com/mattbrehmer" class="user-mention">@mattbrehmer</a>) is an alumni of the <a href="http://www.cs.ubc.ca/group/infovis/">InfoVis</a> and <a href="/http://www.cs.ubc.ca/labs/imager/Meetings/mux.html">Multimodal User Experience</a> groups at the <a href="http://www.ubc.ca/">University of British Columbia</a>, advised by <a href="http://www.cs.ubc.ca/~tmm/">Tamara Munzner</a>. Matthew holds an M.Sc in Computer Science (Specialization in Human-Computer Interaction) from the University of British Columbia (2011), and a B.Computing (Honours) in Cognitive Science from Queen's University (2009). He defended his dissertation on March 23rd, 2016.</p>
+
+<h3>
+<a id="dissertation" class="anchor" href="#versions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dissertation</h3>
+
+<ul>
+<li><a href="http://hdl.handle.net/2429/57543">Final Version: Apr 6, 2016 [PDF, 428 pages, 88.3 MB]</a></li>
+<li><a href="https://github.com/mattbrehmer/dissertation/raw/master/dissertation-exam.pdf">Exam Version: Jan 12, 2016 [PDF, 355 pages, 80.7 MB]</a></li>
+</ul>
+
+<h3>
+<a id="bibliography" class="anchor" href="#bibliography" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bibliography</h3>
+
+<ul>
+<li><a href="https://raw.githubusercontent.com/mattbrehmer/dissertation/master/biblio.bib">[BibTeX, 76 KB]</a></li>
+</ul>
+
+<h3>
+<a id="contents" class="anchor" href="#contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contents</h3>
+
+<ol>
+<li><p>Introduction</p></li>
+<li>
+<p><em>A Typology of Abstract Visualization Tasks</em> </p>
+
+<p>[a version of the <a href="http://cs.ubc.ca/labs/imager/tr/2013/MultiLevelTaskTypology/">IEEE TVCG / Proc. InfoVis 2013</a> paper]</p>
+</li>
+<li>
+<p>Interview Study:: <em>Visualizing Dimensionally-Reduced Data: Interviews with Analysts and a Characterization of Task Sequences</em> </p>
+
+<p>[a version of the <a href="http://cs.ubc.ca/labs/imager/tr/2014/DRVisTasks/">ACM BELIV 2014</a> paper]</p>
+</li>
+<li>
+<p>Field Study:: <em>Overview: The Design, Adoption, and Analysis of a Visual Document Mining Tool For Investigative Journalists</em> </p>
+
+<p>[a version of the <a href="http://cs.ubc.ca/labs/imager/tr/2014/Overview/">IEEE TVCG / Proc. InfoVis 2014</a> paper]</p>
+</li>
+<li>
+<p>Design Study:: <em>Matches, Mismatches, and Methods: Multiple-View Workflows for Energy Portfolio Analysis</em> </p>
+
+<p>[a version of the <a href="http://www.cs.ubc.ca/labs/imager/tr/2015/MatchesMismatchesMethods/">IEEE TVCG / Proc. InfoVis 2015</a> paper]</p>
+</li>
+<li><p>Reflection and Conclusion</p></li>
+<li><p>Bibliography</p></li>
+<li><p>Appendix A: Task Typology (A Chronology)</p></li>
+<li><p>Appendix B: Interview Study Supplemental Materials</p></li>
+<li><p>Appendix D: Field Study Supplemental Materials</p></li>
+<li><p>Appendix D: Design Study Supplemental Materials</p></li>
+<li><p>Appendix E: Consent Forms</p></li>
+<li><p>Index</p></li>
+</ol>
+
+<h3>
+<a id="talk" class="anchor" href="#talk" aria-hidden="true"><span class="octicon octicon-link"></span></a>Defence Talk</h3>
+
+<ul>
+  <li><a href="https://github.com/mattbrehmer/dissertation/raw/master/16.03.23-defence.pdf">Slides</a> (12 MB PDF).</li>
+  <li><a href="https://github.com/mattbrehmer/dissertation/raw/master/16.03.23-defence-min.key">Slides</a> (24 MB Keynote).</li>
+  <li><a href="https://github.com/mattbrehmer/dissertation/raw/master/16.03.23-defence.key">Slides (incl. supplemental)</a> (96 MB Keynote).</li>
+</ul>
+
+
+<h3>
+<a id="chronology" class="anchor" href="#feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chronology</h3>
+
+<p>This diagram depicts the chronology of the projects described in this dissertation. Click to view a larger version of the diagram in a new tab.</p>
+<p><a href="https://raw.githubusercontent.com/mattbrehmer/dissertation/master/figures/thesis-timeline.png" target="_blank"><img src="https://raw.githubusercontent.com/mattbrehmer/dissertation/master/figures/thesis-timeline.png" alt="chronology" title="chronology"></a></p>
+
+<h3>
+<a id="figures" class="anchor" href="#feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Figures</h3>
+
+<ul>
+<li><a href="https://github.com/mattbrehmer/dissertation/tree/master/figures">Directory of figures</a></li>
+</ul>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p><a href="http://creativecommons.org/licenses/by-nd/2.5/ca/">CC BY-ND 2.5 CA</a>.</p>
+
+<h3>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h3>
+
+<p>mattbrehmer[at]gmail[dot]com | <a href="https://twitter.com/mattbrehmer">@mattbrehmer</a>.</p>
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mattbrehmer">mattbrehmer</a></p>
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/web/20161121081425js_/http://mattbrehmer.github.io:80/dissertation/javascripts/scale.fix.js"></script>
+    
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-71343625-2', 'auto');
+    ga('send', 'pageview');
+  
+  </script>
+
+</body></html>
